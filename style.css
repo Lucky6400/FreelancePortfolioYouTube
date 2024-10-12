@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .intro_cont {
     margin-top: -70px;
     z-index: 10;
