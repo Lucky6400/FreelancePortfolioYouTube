@@ -1,0 +1,93 @@
+.intro_cont {
+    margin-top: -70px;
+    z-index: 10;
+}
+
+.navbar {
+    z-index: 90;
+}
+
+.intro_cont h1 {
+    z-index: 90;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 100;
+    margin: auto auto;
+}
+
+.navbar-toggler {
+    border: none !important;
+    &:focus {
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.carousel-item>img {
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 4px;
+    height: 100%;
+    background-color: #dee2e6; /* Light gray vertical line */
+}
+
+.timeline-entry {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.timeline-entry .timeline-marker {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: #0d6efd; /* Blue marker */
+    border-radius: 50%;
+}
+
+.timeline-entry:last-child {
+    padding-bottom: 0;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0;
+}
+
+.navbar {
+    transition: background-color 0.4s ease;
+    background-color: transparent;
+}
+
+/* Background color when scrolling */
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
